@@ -6,7 +6,7 @@
 
     <body>
         <div>
-            <a href="/rango/">Home</a><br />
+            <a href="/rango/">Index</a><br />
         </div>
 
         <div>
@@ -21,10 +21,14 @@
                 {% else %}
                 <strong>No pages currently in category.</strong>
                 {% endif %}
+
+                <a href="/rango/category/{{ category.slug }}/add_page">Add a New Page</a>
             {% else %}
                 The specified category does not exist.
             {% endif %}
         </div>
+
+
     </body>
 
 </html>
